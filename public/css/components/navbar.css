@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-purple);
   color: var(--color-white);
   padding: 16px;
   height: 80px;
@@ -11,6 +10,11 @@
   top: 0;
   left: 0;
   z-index: 1000;
+  transition: background-color var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-purple);
 }
 
 .navbar__logo {
