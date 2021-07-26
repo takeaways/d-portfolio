@@ -5,6 +5,12 @@
   background-color: var(--color-purple);
   color: var(--color-white);
   padding: 16px;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .navbar__logo {
@@ -20,6 +26,7 @@
   margin-right: 5px;
 }
 
+.navbar__menu__container,
 .navbar__menu {
   display: flex;
 }
@@ -37,4 +44,35 @@
 }
 .navbar__menu__item:hover {
   background-color: var(--color-dark-purple);
+}
+
+.navbar__toggle-btn {
+  position: absolute;
+  top: 32px;
+  transform: translateY(-50%);
+  right: 40px;
+  font-size: 24px;
+  color: var(--color-white);
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: inherit;
+  }
+  .navbar__menu__container {
+    width: 100%;
+    padding-top: 20px;
+    display: none;
+  }
+  .navbar__menu {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
 }

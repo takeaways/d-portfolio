@@ -37,3 +37,10 @@
 .testimonial__speech-bubble a {
   color: var(--color-purple);
 }
+
+@media screen and (max-width: 768px) {
+  .testimonial__avatar {
+    max-height: 80px;
+    max-width: 80px;
+  }
+}

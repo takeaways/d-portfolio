@@ -1,11 +1,14 @@
 .work__categories {
   margin: 40px;
+  display: flex;
+  justify-content: center;
 }
 .category__btn {
   border: 1px solid var(--color-dark-white);
   border-radius: var(--size-border-radius);
   font-size: var(--font-regular);
   padding: 8px 48px;
+  margin: 5px;
 }
 
 .category__btn.active {
@@ -101,4 +104,18 @@
   transform: translateX(-50%);
   margin-top: 8px;
   background-color: var(--color-dark-white);
+}
+
+@media screen and (max-width: 768px) {
+  .work__categories {
+    flex-wrap: wrap;
+  }
+
+  .category__btn {
+    margin: 0;
+    flex-basis: 50%;
+  }
+  .project {
+    flex-grow: 1;
+  }
 }
