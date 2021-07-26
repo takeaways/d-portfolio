@@ -5,6 +5,7 @@
 /* components */
 @import url(components/navbar.css);
 @import url(components/home.css);
+@import url(components/about.css);
 * {
   box-sizing: border-box;
 }
@@ -41,4 +42,11 @@ p {
   font-weight: var(--weight-regular);
   color: var(--color-black);
   margin: 4px 0;
+}
+
+.section {
+  text-align: center;
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
 }

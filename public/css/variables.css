@@ -27,4 +27,7 @@
 
   /* Border radius */
   --size-border-radius: 5px;
+
+  /* Animation */
+  --animation-duration: 300ms;
 }
