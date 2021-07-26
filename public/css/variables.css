@@ -24,4 +24,7 @@
   --weight-bold: 700;
   --weight-semi-bold: 600;
   --weight-regular: 400;
+
+  /* Border radius */
+  --size-border-radius: 5px;
 }
