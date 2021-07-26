@@ -22,5 +22,5 @@ workBtnContainer.addEventListener("click", (e) => {
       }
     });
     projectContainer.classList.remove("anim-out");
-  }, 100);
+  }, 300);
 });
