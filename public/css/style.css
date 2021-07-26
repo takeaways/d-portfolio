@@ -6,6 +6,7 @@
 @import url(components/navbar.css);
 @import url(components/home.css);
 @import url(components/about.css);
+@import url(components/skill.css);
 * {
   box-sizing: border-box;
 }
@@ -47,6 +48,9 @@ p {
 .section {
   text-align: center;
   padding: 50px;
-  max-width: 1200px;
   margin: 0 auto;
+}
+
+.section__container {
+  max-width: 1200px;
 }
