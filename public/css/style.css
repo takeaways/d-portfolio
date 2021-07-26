@@ -8,6 +8,7 @@
 @import url(components/about.css);
 @import url(components/skill.css);
 @import url(components/work.css);
+@import url(components/testimonial.css);
 * {
   box-sizing: border-box;
 }
