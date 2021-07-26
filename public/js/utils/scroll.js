@@ -48,6 +48,7 @@ window.addEventListener("scroll", () => {
 document //
   .querySelector(".navbar__menu")
   .addEventListener("click", (event) => {
+    document.querySelector(".navbar__menu__container").classList.toggle("open");
     handleScrollIntoView(event.target.dataset.link);
   });
 

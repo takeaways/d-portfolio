@@ -3,8 +3,15 @@ const projectContainer = document.querySelector(".work__projects");
 const projects = document.querySelectorAll(".project");
 
 workBtnContainer.addEventListener("click", (e) => {
+  if (e.target.nodeName !== "BUTTON") {
+    return;
+  }
   const filter = e.target.dataset.filter;
   projectContainer.classList.add("anim-out");
+
+  const selected = document.querySelector(".category__btn.selected");
+  selected.classList.remove("selected");
+  e.target.classList.add("selected");
 
   setTimeout(() => {
     projects.forEach((project) => {
@@ -15,5 +22,5 @@ workBtnContainer.addEventListener("click", (e) => {
       }
     });
     projectContainer.classList.remove("anim-out");
-  }, 300);
+  }, 100);
 });
