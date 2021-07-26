@@ -72,8 +72,9 @@
 @media screen and (max-width: 768px) {
   .about__majors {
     flex-direction: column;
+    margin: 20px 0;
   }
   .major {
-    margin-bottom: 38px;
+    margin-bottom: 20px;
   }
 }
